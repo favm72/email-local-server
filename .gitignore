@@ -1,0 +1,6 @@
+node_modules
+.vscode
+*.pem
+yarn.lock
+*.db
+compose.yml

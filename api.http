@@ -1,0 +1,16 @@
+@host=http://localhost:3003
+
+# send email
+POST {{host}}/email
+Content-Type: application/json
+
+{
+    "to": "dest@sample.com",
+    "from": "from@sample.com",
+    "subject": "Test email",
+    "body": "<h1>Test email</h1><p>Test email</p>"
+}
+
+### get all emails
+GET {{host}}/emails
+Content-Type: application/json
